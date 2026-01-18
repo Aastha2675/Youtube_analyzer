@@ -1,8 +1,5 @@
 import re
 
-sample_url = "https://www.youtube.com/watch?v=-0oPVEYSIGk"
-urel = "https://youtu.be/-0oPVEYSIGk?si=5EkxdMKRxo2_QKlA"
-
 def extract_id(url):
 
     # Case 1: youtube.com
@@ -19,8 +16,3 @@ def extract_id(url):
         
     return None
 
-ans = extract_id(sample_url)
-print(ans)
-
-ans1 = extract_id(urel)
-print(ans1)
